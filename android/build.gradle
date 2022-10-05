@@ -6,12 +6,12 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 28)
-    buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
+    compileSdkVersion safeExtGet('compileSdkVersion', 29)
+    buildToolsVersion safeExtGet('buildToolsVersion', '29.0.3')
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 28)
+        minSdkVersion safeExtGet('minSdkVersion', 21)
+        targetSdkVersion safeExtGet('targetSdkVersion', 29)
         versionCode 1
         versionName "1.0.0"
     }
@@ -27,7 +27,7 @@ android {
 
 buildscript {
     ext {
-        kotlinVersion = '1.4.31'
+        kotlinVersion = '1.6.0'
     }
     repositories {
         jcenter()
